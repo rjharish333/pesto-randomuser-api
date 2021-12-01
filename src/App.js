@@ -15,7 +15,7 @@ const App = () => {
       .then(res => res.json())
       .then(
         (result) => {
-          console.log(result.results[0])
+
           setUser(result.results[0])
           setLoader(false)
         },
@@ -70,19 +70,19 @@ const App = () => {
 
         <div className="user-info-icons">
             <div className="icon">
-                <a href="#"><i className="fas fa-mars"></i></a>
+                <button className="border-none"><i className="fas fa-mars"></i></button>
                 <h4>{user.gender}</h4>
                 <p>Gender</p>
             </div>
 
             <div className="icon">
-                <a href="#"><i className="fas fa-birthday-cake"></i></a>
+                <button className="border-none"><i className="fas fa-birthday-cake"></i></button>
                 <h4>{user.dob.age}</h4>
                 <p>Age</p>
             </div>
 
             <div className="icon">
-                <a href="#"><i className="far fa-calendar-alt"></i></a>
+                <button className="border-none"><i className="far fa-calendar-alt"></i></button>
                 <h4> {user.registered.date.substr(0, 10)} </h4>
                 <p>Register At</p>
             </div>

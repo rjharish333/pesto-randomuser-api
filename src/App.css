@@ -210,7 +210,7 @@ background: linear-gradient(to bottom right, #6452E9, #639FF9);
   -webkit-box-direction: normal;
           flex-direction: column;
 }
-.wrapper .user-info-icons .icon a {
+.wrapper .user-info-icons .icon button {
   color: #fff;
   width: 60px;
   height: 60px;
@@ -220,15 +220,15 @@ background: linear-gradient(to bottom right, #6452E9, #639FF9);
   border-radius: 30px;
   box-shadow: 0 13px 26px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
 }
-.wrapper .user-info-icons .icon:nth-of-type(1) a {
+.wrapper .user-info-icons .icon:nth-of-type(1) button {
   background: -webkit-gradient(linear, left top, right bottom, from(#C90A6D), to(#FF48A0));
   background: linear-gradient(to bottom right, #C90A6D, #FF48A0);
 }
-.wrapper .user-info-icons .icon:nth-of-type(2) a {
+.wrapper .user-info-icons .icon:nth-of-type(2) button {
   background: -webkit-gradient(linear, left top, right bottom, from(#5E5AEC), to(#3F9EFC));
   background: linear-gradient(to bottom right, #5E5AEC, #3F9EFC);
 }
-.wrapper .user-info-icons .icon:nth-of-type(3) a {
+.wrapper .user-info-icons .icon:nth-of-type(3) button {
   background: #f85032;
   background: -webkit-linear-gradient(to right, #e73827, #f85032);
   background: linear-gradient(to right, #e73827, #f85032);
@@ -250,6 +250,10 @@ background: linear-gradient(to bottom right, #6452E9, #639FF9);
 
 .font-10 {
   font-size: 10px !important;
+}
+
+.border-none {
+  border: none;
 }
 
 @media only screen and (max-width: 600px) {
